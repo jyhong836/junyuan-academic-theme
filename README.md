@@ -7,7 +7,7 @@ The theme is based on [Wowchemy Academic Theme](https://github.com/wowchemy/star
 
 Guidance for deployment and customizations:
 * [matteocourthoud's guide](https://matteocourthoud.github.io/post/website/).
-* The full set of codes for reproducing [Junyuan's website](https://github.com/jyhong836/jyhong.gitlab.io).
+* The full set of [codes](https://github.com/jyhong836/jyhong.gitlab.io) for reproducing [Junyuan's website](https://jyhong.gitlab.io).
 
 Features added by the theme:
 * In publication section, you can set filter buttons, like selected and specific tags, which can automatically adjust the displayed papers.

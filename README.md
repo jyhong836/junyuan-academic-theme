@@ -9,6 +9,16 @@ Guidance for deployment and customizations:
 
 Feel free to use :smile:.
 
+You can directly start from [my website codes](https://github.com/jyhong836/jyhong.gitlab.io) or follow the below instruction to use the theme only.
+1. Run `git clone git@github.com:jyhong836/junyuan-academic-theme.git` in your `theme` folder.
+2. Update the imported `module` in `config/_default/config.yaml`.
+    ```yaml
+    module:
+    imports:
+        - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
+        # - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
+        - path: junyuan-academic-theme
+    ```
 
 Features added by the theme:
 * In publication section, you can set filter buttons, like selected and specific tags, which can automatically adjust the displayed papers.

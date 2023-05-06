@@ -24,6 +24,7 @@ Features added by the theme:
 * In publication section, you can set filter buttons, like selected and specific tags, which can automatically adjust the displayed papers.
 * `Showcase` design view (`design.view` in `content/home/featured`) for the featured widget. The `showcase` view is derived from portfolio's `showcase` view and is adjusted with a larger figure and text.
 * Avatar will be stick on the top when scrolling.
+* New citation format with venue and year badge at the beginning. Authors in the second line. Link buttons will not in new line to save space.
 
 Useful info:
 * Color customization by editing `data/themes/<theme-name>.toml`.

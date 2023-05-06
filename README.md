@@ -2,10 +2,6 @@
 
 [![Hugo Theme](https://img.shields.io/badge/Hugo-black.svg?style=plastic&logo=Hugo&label=Theme)](https://jyhong.gitlab.io) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-<a href="https://themes.gohugo.io/">
-<img src="https://img.shields.io/badge/Hugo%20theme%20XYZ-View demo-blue.svg?style=flat-square">
-</a>
-
 This the theme customized and used by [Junyuan Hong](https://jyhong.gitlab.io) (click to check the demo).
 The theme is based on [Wowchemy Academic Theme](https://github.com/wowchemy/starter-hugo-academic) driven by [Hugo](https://gohugo.io/). The customization was first created by [matteocourthoud](https://matteocourthoud.github.io/).
 

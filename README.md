@@ -1,5 +1,7 @@
 ## Junyuan's Customized Academic Website
 
+![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This the theme customized and used by [Junyuan Hong](https://jyhong.gitlab.io) (click to check the demo).
 The theme is based on [Wowchemy Academic Theme](https://github.com/wowchemy/starter-hugo-academic) driven by [Hugo](https://gohugo.io/). The customization was first created by [matteocourthoud](https://matteocourthoud.github.io/).
 

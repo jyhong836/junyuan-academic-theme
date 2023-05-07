@@ -20,15 +20,16 @@ Feel free to use :smile:.
 ## How to use
 
 You can directly start from [my website codes](https://github.com/jyhong836/jyhong.gitlab.io) or follow the below instruction to use the theme only.
-1. Run `git clone git@github.com:jyhong836/junyuan-academic-theme.git` in your `theme` folder.
+1. Run `git clone git@github.com:jyhong836/junyuan-academic-theme.git` in your `themes` folder.
 2. Update the imported `module` in `config/_default/config.yaml`.
     ```yaml
     module:
-    imports:
-        - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
-        # - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
-        - path: junyuan-academic-theme
+        imports:
+            - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
+            # - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
+            - path: junyuan-academic-theme
     ```
+3. Refer to [my codes](https://github.com/jyhong836/jyhong.gitlab.io) to use the theme.
 
-Useful info:
+Useful customization info:
 * Color customization by editing `data/themes/<theme-name>.toml`.

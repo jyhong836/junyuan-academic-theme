@@ -29,7 +29,7 @@
   {{ else if .Params.publication }}
   {{- .Params.publication | markdownify -}}
   {{ end }}
-  {{- .Date.Format " 2006" -}}
+  {{- .Params.publishDate.Format " 2006" -}}
   </span>
   <a href="{{ .RelPermalink }}">{{ .Title }}</a>.<br/>
   <span class="article-metadata li-cite-author">

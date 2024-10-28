@@ -72,6 +72,11 @@
   version = "1.55.2"
   sri = "sha512-gttPT9uTUiaLBj6XZdcB0ydKXiDaBwstInkN4Qvp1Nz3iwXNc8TTQplIEPIGxyJBDqERjwkKxf2OyO47/0EHbQ=="
   url = "https://cdnjs.cloudflare.com/ajax/libs/plotly.js/%s/plotly.min.js"
+[js.fontAwesome]
+  version = "1.0.0"
+  sri = ""
+  url = "https://kit.fontawesome.com/031f7c886f.js"
+  crossorigin="anonymous"
 
 # CSS
 

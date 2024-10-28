@@ -117,7 +117,7 @@
     {{ range $data.contact_links }}
     {{ $pack := or .icon_pack "fas" }}
     {{ $pack_prefix := $pack }}
-    {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+    {{ if in (slice "fab" "fas" "far" "fal" "fa-brands") $pack }}
       {{ $pack_prefix = "fa" }}
     {{ end }}
     {{ $link := .link }}

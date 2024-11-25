@@ -85,7 +85,7 @@
     </div>
 
     <!-- news -->
-    <div class="section-subheading">{{ i18n "news" | markdownify }}</div>
+    <div class="section-subheading">{{ "Recent News" | markdownify }}</div>
     {{ with $person.news }}
     <ul style="list-style-type: none; padding-left: 0;">
       {{ range . }}
@@ -114,6 +114,9 @@
           <a href="{{ .link }}"
             class="card-image hover-overlay">
             <img src="{{ .img }}" alt="{{ .title }}" class="img-responsive" loading="lazy">
+            <a class="card-link" href="{{.link}}" style="color: #b5b5b5; font-size: smaller;" target="_blank" rel="noopener">
+              Covered by: {{ .title }}
+            </a>
           </a>
         </div>
       </div>

@@ -98,6 +98,9 @@
 - id: interests
   translation: Interests
 
+- id: news
+  translation: News
+
 - id: education
   translation: Education
 

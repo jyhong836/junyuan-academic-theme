@@ -84,6 +84,43 @@
       <!-- <a class="btn btn-outline-primary btn-page-header" href="/files/cv.pdf" target="_blank" rel="noopener">DOWNLOAD CV</a> -->
     </div>
 
+    <!-- news -->
+    <div class="section-subheading">{{ i18n "news" | markdownify }}</div>
+    {{ with $person.news }}
+    <ul style="list-style-type: none; padding-left: 0;">
+      {{ range . }}
+      <li class="two-column-list">
+        <div class="badge-column">
+          <span class="badge badge-grey">{{ .date | markdownify | emojify }}</span>
+        </div>
+        <div class="text-column">
+          <p>
+            <i class="fa {{ .icon }}" {{ if not .highlight }} style="color: #b5b5b5;" {{ end }}></i>
+            {{ .content | markdownify | emojify }}
+          </p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    <!-- media -->
+    <div class="isotope projects-container js-layout-masonry" style="position: relative; height: 1344.2px;">
+    {{ with $person.media }}
+      {{ range . }}
+      <div
+        class="project-card project-item isotope-item js-id-Machine-Learning js-id-Privacy js-id-Robustness js-id-Fairness js-id-Security js-id-Inclusiveness js-id-Selected">
+        <div class="card">
+          <a href="{{ .link }}"
+            class="card-image hover-overlay">
+            <img src="{{ .img }}" alt="{{ .title }}" class="img-responsive" loading="lazy">
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+    </div>
+
     <div class="row">
 
       {{ with $person.interests }}
@@ -107,6 +144,7 @@
             <div class="description">
               <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
               <p class="institution">{{ .institution }}</p>
+              <p class="institution">{{ .thesis }}</p>
             </div>
           </li>
           {{ end }}

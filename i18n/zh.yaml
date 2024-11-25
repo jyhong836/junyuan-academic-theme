@@ -58,6 +58,8 @@
   translation: 下载
 - id: interests
   translation: 兴趣爱好
+- id: news
+  translation: 新闻
 - id: education
   translation: 教育经历
 - id: user_profile_latest

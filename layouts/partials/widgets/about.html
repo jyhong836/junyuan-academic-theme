@@ -121,6 +121,27 @@
     {{ end }}
     </div>
 
+    <!-- awards -->
+    <div class="section-subheading">{{ "Awards" | markdownify }}</div>
+    {{ with $person.awards }}
+    <ul>
+      {{ range . }}
+      <li>{{ .content | markdownify | emojify }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    <!-- funding -->
+    <div class="section-subheading">{{ "Funding" | markdownify }}</div>
+    I am grateful that our research is supported by the multiple programs.
+    {{ with $person.funding }}
+    <ul>
+      {{ range . }}
+      <li>{{ .content | markdownify | emojify }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
     <div class="row">
 
       {{ with $person.interests }}

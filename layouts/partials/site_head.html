@@ -5,7 +5,7 @@
   {{ $is_sponsor := site.Params.i_am_a_sponsor | default false }}
   {{ $hide_generator := site.Params.power_ups.hide_generator | default false }}
   {{ if not (and $is_sponsor $hide_generator) }}
-    <meta name="generator" content="Wowchemy {{ site.Data.wowchemy.version }} for Hugo" />
+    <meta name="generator" content="Wowchemy {{ hugo.Data.wowchemy.version }} for Hugo" />
   {{ end }}
 
   {{ if site.Params.marketing.google_optimize | and hugo.IsProduction }}
@@ -55,7 +55,7 @@
   {{ range .Translations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
   {{ end }}
-  <link rel="alternate" hreflang="{{ site.LanguageCode | default "en-us" }}" href="{{ .Permalink }}" />
+  <link rel="alternate" hreflang="{{ site.Language.Locale | default "en-us" }}" href="{{ .Permalink }}" />
 
   {{ partial "functions/parse_theme" . }}
 
@@ -64,8 +64,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   {{ end }}
 
-  {{ $css := site.Data.assets.css }}
-  {{ $js := site.Data.assets.js }}
+  {{ $css := hugo.Data.assets.css }}
+  {{ $js := hugo.Data.assets.js }}
   {{ if ne ($scr.Get "primary") "#fff" }}
     <meta name="theme-color" content="{{ $scr.Get "primary" }}" />
   {{ end }}
@@ -130,7 +130,7 @@
     {{ end }}
 
     {{/* Load async scripts. */}}
-    {{ range $k, $v := site.Data.assets.js }}
+    {{ range $k, $v := hugo.Data.assets.js }}
       {{/* TODO: investigate why `where ... "async" true` does not work. */}}
       {{ $load := $v.async }}
 
@@ -160,7 +160,7 @@
     {{ end }}
   {{ end }}
 
-  {{ $license := printf "/*! Wowchemy v%s | https://wowchemy.com/ */\n" site.Data.wowchemy.version }}
+  {{ $license := printf "/*! Wowchemy v%s | https://wowchemy.com/ */\n" hugo.Data.wowchemy.version }}
   {{ $license := $license | printf "%s/*! Copyright 2016-present George Cushen (https://georgecushen.com/) */\n" }}
   {{ $license := $license | printf "%s/*! License: https://github.com/wowchemy/wowchemy-hugo-modules/blob/main/LICENSE.md */\n" }}
   {{ $css_bundle_head := $license | resources.FromString "css/bundle-head.css" }}
@@ -240,7 +240,7 @@
     <meta property="og:image" content="{{ . }}" />
     <meta property="twitter:image" content="{{ . }}" />
   {{- end -}}
-  <meta property="og:locale" content="{{ site.LanguageCode | default "en-us" }}" />
+  <meta property="og:locale" content="{{ site.Language.Locale | default "en-us" }}" />
   {{ if .IsPage }}
     {{ if not .PublishDate.IsZero }}
       <meta
